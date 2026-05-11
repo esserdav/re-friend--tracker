@@ -15,6 +15,60 @@
                 "required": true
                 },
                 {
+                "id": "GroupDate",
+                "type": "date",
+                "name": "Date",
+                "width": 2,
+                "required": true
+                },
+                {
+                "id": "GroupComments",
+                "type": "text",
+                "name": "Comments",
+                "width": 2,
+                "required": true
+                },
+                {
+                "type": "deleteButton",
+                "name": "Delete"
+                },
+                {
+                "type": "cancelButton",
+                "name": "Cancel"
+                },
+                {
+                "type": "okButton",
+                "name": "Ok"
+                }
+                ]
+            },
+            {
+                "id": "ActivityForm",
+                "title": "Activity",
+                "url": "/activity",
+                "formFieldList": [
+                {
+                "id": "activityName",
+                "type": "text",
+                "name": "Name",
+                "width": 2,
+                "required": true
+                },
+                {
+                "id": "activityDate",
+                "type": "date",
+                "name": "Date",
+                "width": 2,
+                "required": true
+                },
+                {
+                "id": "activityComments",
+                "type": "text",
+                "name": "Comments",
+                "width": 2,
+                "required": true
+                },
+                {
                 "type": "deleteButton",
                 "name": "Delete"
                 },
@@ -112,6 +166,13 @@
                         "required": true
                     },
                     {
+                    "id": "GroupComments",
+                    "type": "text",
+                    "name": "Comments",
+                    "width": 2,
+                    "required": true
+                    },
+                    {
                         "type": "deleteButton",
                         "name": "Delete"
                     },
@@ -180,6 +241,13 @@
                         "icon": "fa-weixin",
                         "color": "wisteria",
                         "page": "groupspage"
+                    },
+                     {
+                        "type": "button",
+                        "name": "Activity",
+                        "icon": "fa-weixin",
+                        "color": "wisteria",
+                        "page": "activitypage"
                     }
                 ]
             },
@@ -261,6 +329,33 @@
                         "url": "/group",
                         "form": {
                         "form": "GroupForm"
+                        }
+                    }
+                ]  
+            },
+            {
+                "id": "activitypage",
+                "elementList": [
+                {
+                "type": "backbutton"
+                },
+                    {
+                    "type": "newButton",
+                    "name": "NewActivity",
+                    "icon": "fa-weixin",
+                    "color": "green",
+                    "form": {
+                        "form": "ActivityForm"
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "icon": "fa-weixin",
+                        "color": "wisteria",
+                        "search": true,
+                        "url": "/activity",
+                        "form": {
+                        "form": "ActivityForm"
                         }
                     }
                 ]  
