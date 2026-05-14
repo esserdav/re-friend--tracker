@@ -280,9 +280,7 @@
                         "color": "blue",
                         "search": true,
                         "url": "/friend",
-                        "form": {
-                            "form": "FriendForm"
-                        }
+                        "page": "friendactivitypage"
                     }
                 ]
             },
@@ -362,6 +360,42 @@
                         "color": "wisteria",
                         "search": true,
                         "url": "/activity",
+                        "form": {
+                        "form": "ActivityForm"
+                        }
+                    }
+                ]  
+            },
+            {
+                "id": "friendactivitypage",
+                "elementList": [
+                {
+                "type": "backbutton"
+                },
+                    {
+                    "type": "newButton",
+                    "name": "AddActivity",
+                    "icon": "fa-weixin",
+                    "color": "green",
+                    "form": {
+                        "form": "AddActivityForm"
+                        }
+                    },
+                    {
+                      "type": "newButton",
+                        "name": "EditFriend",
+                        "icon": "fa-weixin",
+                        "color": "green",
+                        "form": {
+                        "form": "ActivityForm"
+                        }  
+                    },
+                    {
+                        "type": "list",
+                        "icon": "fa-weixin",
+                        "color": "wisteria",
+                        "search": true,
+                        "url": "/friend/:friendKey/activity",
                         "form": {
                         "form": "ActivityForm"
                         }
