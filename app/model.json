@@ -387,7 +387,7 @@
                         "icon": "fa-weixin",
                         "color": "green",
                         "form": {
-                        "form": "ActivityForm"
+                        "form": "FriendForm"
                         }  
                     },
                     {
