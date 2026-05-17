@@ -17,7 +17,7 @@
                     {
                         "id": "creationDate",
                         "type": "date",
-                        "name": "Creation Date",
+                        "name": "CreationDate",
                         "width": 2,
                         "required": true
                     },
@@ -98,14 +98,14 @@
                     {
                         "id": "familyName",
                         "type": "text",
-                        "name": "Family Name",
+                        "name": "FamilyName",
                         "width": 1,
                         "required": true
                     },
                     {
                         "id": "firstName",
                         "type": "text",
-                        "name": "First Name",
+                        "name": "FirstName",
                         "width": 1,
                         "required": true
                     },
