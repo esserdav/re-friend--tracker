@@ -306,9 +306,7 @@
                         "color": "blue",
                         "search": true,
                         "url": "/location",
-                        "form": {
-                            "form": "LocationForm"
-                        }
+                        "page": "locationactivitypage"
                     }
                 ]
             },
@@ -360,9 +358,7 @@
                         "color": "wisteria",
                         "search": true,
                         "url": "/activity",
-                        "form": {
-                        "form": "ActivityForm"
-                        }
+                        "page": "Activityfriendpage"
                     }
                 ]  
             },
@@ -401,6 +397,60 @@
                         }
                     }
                 ]  
+            },
+            {
+                "id": "activityfriendpage",
+                "elementList": [
+                    {
+                        "type": "backbutton"
+                    },
+                    {
+                        "type": "newButton",
+                        "name": "EditActivity",
+                        "icon": "fa-weixin",
+                        "color": "green",
+                        "form": {
+                            "form": "ActivityForm"
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "icon": "fa-user",
+                        "color": "blue",
+                        "search": true,
+                        "url": "/activity/:activityKey/friend",
+                        "form": {
+                            "form": "FriendForm"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "locationactivitypage",
+                "elementList": [
+                    {
+                        "type": "backbutton"
+                    },
+                    {
+                        "type": "newButton",
+                        "name": "EditLocation",
+                        "icon": "fa-home",
+                        "color": "green",
+                        "form": {
+                            "form": "LocationForm"
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "icon": "fa-weixin",
+                        "color": "wisteria",
+                        "search": true,
+                        "url": "/location/:locationKey/activity",
+                        "form": {
+                            "form": "ActivityForm"
+                        }
+                    }
+                ]
             }
         ]
     }
