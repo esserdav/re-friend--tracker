@@ -7,39 +7,39 @@
                 "title": "Group",
                 "url": "/group",
                 "formFieldList": [
-                {
-                "id": "name",
-                "type": "text",
-                "name": "GroupName",
-                "width": 2,
-                "required": true
-                },
-                {
-                "id": "GroupDate",
-                "type": "date",
-                "name": "Date",
-                "width": 2,
-                "required": true
-                },
-                {
-                "id": "GroupComments",
-                "type": "text",
-                "name": "Comments",
-                "width": 2,
-                "required": true
-                },
-                {
-                "type": "deleteButton",
-                "name": "Delete"
-                },
-                {
-                "type": "cancelButton",
-                "name": "Cancel"
-                },
-                {
-                "type": "okButton",
-                "name": "Ok"
-                }
+                    {
+                        "id": "name",
+                        "type": "text",
+                        "name": "Name",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id": "creationDate",
+                        "type": "date",
+                        "name": "Creation Date",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id": "comments",
+                        "type": "text",
+                        "name": "Comments",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "type": "deleteButton",
+                        "name": "Delete"
+                    },
+                    {
+                        "type": "cancelButton",
+                        "name": "Cancel"
+                    },
+                    {
+                        "type": "okButton",
+                        "name": "Ok"
+                    }
                 ]
             },
             {
@@ -47,47 +47,47 @@
                 "title": "Activity",
                 "url": "/activity",
                 "formFieldList": [
-                {
-                "id": "activityName",
-                "type": "text",
-                "name": "Name",
-                "width": 2,
-                "required": true
-                },
-                {
-                "id": "activityDate",
-                "type": "date",
-                "name": "Date",
-                "width": 2,
-                "required": true
-                },
-                {
-                "id": "activityComments",
-                "type": "text",
-                "name": "Comments",
-                "width": 2,
-                "required": true
-                },
-                {
-                        "id":   "location",
+                    {
+                        "id": "name",
+                        "type": "text",
+                        "name": "Name",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id": "date",
+                        "type": "date",
+                        "name": "Date",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id": "comments",
+                        "type": "text",
+                        "name": "Comments",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id": "location",
                         "type": "autocomplete",
                         "name": "Location",
                         "url": "/location",
                         "form": "LocationForm",
                         "width": 2
-                },
-                {
-                "type": "deleteButton",
-                "name": "Delete"
-                },
-                {
-                "type": "cancelButton",
-                "name": "Cancel"
-                },
-                {
-                "type": "okButton",
-                "name": "Ok"
-                }
+                    },
+                    {
+                        "type": "deleteButton",
+                        "name": "Delete"
+                    },
+                    {
+                        "type": "cancelButton",
+                        "name": "Cancel"
+                    },
+                    {
+                        "type": "okButton",
+                        "name": "Ok"
+                    }
                 ]
             },
             {
@@ -98,14 +98,14 @@
                     {
                         "id": "familyName",
                         "type": "text",
-                        "name": "FamilyName",
+                        "name": "Family Name",
                         "width": 1,
                         "required": true
                     },
                     {
                         "id": "firstName",
                         "type": "text",
-                        "name": "FirstName",
+                        "name": "First Name",
                         "width": 1,
                         "required": true
                     },
@@ -115,7 +115,6 @@
                         "name": "Nickname",
                         "width": 2,
                         "required": true
-
                     },
                     {
                         "id": "group",
@@ -126,7 +125,7 @@
                         "width": 2
                     },
                     {
-                        "id":   "location",
+                        "id": "location",
                         "type": "autocomplete",
                         "name": "Location",
                         "url": "/location",
@@ -136,11 +135,11 @@
                     {
                         "id": "birthdate",
                         "type": "date",
-                        "name": "Birthday",
+                        "name": "Birthdate",
                         "width": 2
                     },
                     {
-                        "id": "comment",
+                        "id": "comments",
                         "type": "text",
                         "name": "Comments",
                         "width": 2,
@@ -169,16 +168,16 @@
                     {
                         "id": "name",
                         "type": "text",
-                        "name": "LocationName",
+                        "name": "Name",
                         "width": 2,
                         "required": true
                     },
                     {
-                    "id": "GroupComments",
-                    "type": "text",
-                    "name": "Comments",
-                    "width": 2,
-                    "required": true
+                        "id": "comments",
+                        "type": "text",
+                        "name": "Comments",
+                        "width": 2,
+                        "required": true
                     },
                     {
                         "type": "deleteButton",
@@ -200,7 +199,7 @@
                 "url": "/friend/:friendKey/activity",
                 "formFieldList": [
                     {
-                        "id":   "activity",
+                        "id": "activity",
                         "type": "autocomplete",
                         "name": "Activity",
                         "url": "/activity",
@@ -243,14 +242,14 @@
                         "color": "yellow",
                         "page": "locationspage"
                     },
-                     {
+                    {
                         "type": "button",
                         "name": "Groups",
                         "icon": "fa-weixin",
                         "color": "wisteria",
                         "page": "groupspage"
                     },
-                     {
+                    {
                         "type": "button",
                         "name": "Activity",
                         "icon": "fa-weixin",
@@ -313,16 +312,16 @@
             {
                 "id": "groupspage",
                 "elementList": [
-                {
-                "type": "backbutton"
-                },
                     {
-                    "type": "newButton",
-                    "name": "NewGroup",
-                    "icon": "fa-weixin",
-                    "color": "green",
-                    "form": {
-                        "form": "GroupForm"
+                        "type": "backbutton"
+                    },
+                    {
+                        "type": "newButton",
+                        "name": "NewGroup",
+                        "icon": "fa-weixin",
+                        "color": "green",
+                        "form": {
+                            "form": "GroupForm"
                         }
                     },
                     {
@@ -332,24 +331,24 @@
                         "search": true,
                         "url": "/group",
                         "form": {
-                        "form": "GroupForm"
+                            "form": "GroupForm"
                         }
                     }
-                ]  
+                ]
             },
             {
                 "id": "activitypage",
                 "elementList": [
-                {
-                "type": "backbutton"
-                },
                     {
-                    "type": "newButton",
-                    "name": "NewActivity",
-                    "icon": "fa-weixin",
-                    "color": "green",
-                    "form": {
-                        "form": "ActivityForm"
+                        "type": "backbutton"
+                    },
+                    {
+                        "type": "newButton",
+                        "name": "NewActivity",
+                        "icon": "fa-weixin",
+                        "color": "green",
+                        "form": {
+                            "form": "ActivityForm"
                         }
                     },
                     {
@@ -358,33 +357,33 @@
                         "color": "wisteria",
                         "search": true,
                         "url": "/activity",
-                        "page": "Activityfriendpage"
+                        "page": "activityfriendpage"
                     }
-                ]  
+                ]
             },
             {
                 "id": "friendactivitypage",
                 "elementList": [
-                {
-                "type": "backbutton"
-                },
                     {
-                    "type": "newButton",
-                    "name": "AddActivity",
-                    "icon": "fa-weixin",
-                    "color": "green",
-                    "form": {
-                        "form": "AddActivityForm"
+                        "type": "backbutton"
+                    },
+                    {
+                        "type": "newButton",
+                        "name": "AddActivity",
+                        "icon": "fa-weixin",
+                        "color": "green",
+                        "form": {
+                            "form": "AddActivityForm"
                         }
                     },
                     {
-                      "type": "newButton",
+                        "type": "newButton",
                         "name": "EditFriend",
                         "icon": "fa-weixin",
                         "color": "green",
                         "form": {
-                        "form": "FriendForm"
-                        }  
+                            "form": "FriendForm"
+                        }
                     },
                     {
                         "type": "list",
@@ -393,10 +392,10 @@
                         "search": true,
                         "url": "/friend/:friendKey/activity",
                         "form": {
-                        "form": "ActivityForm"
+                            "form": "ActivityForm"
                         }
                     }
-                ]  
+                ]
             },
             {
                 "id": "activityfriendpage",
